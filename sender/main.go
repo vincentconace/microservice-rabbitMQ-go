@@ -11,7 +11,7 @@ import (
 
 func main() {
 	// Define RabbitMQ server URL.
-	amqpServerURL := os.Getenv("RABBITMQ_SERVER_URL")
+	amqpServerURL := os.Getenv("AMQP_SERVER_URL")
 
 	// Create a new RAbbtiMQ connection.
 	connectionRabbitMQ, err := amqp.Dial(amqpServerURL)
